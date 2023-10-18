@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React-Project</title>
+    <style>
+        .striped-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+h1{
+  text-align: center;
+}
+
+.striped-table th,
+.striped-table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.striped-table th {
+  background-color: #ccc;
+}
+
+.striped-table .odd {
+  background-color: #fff;
+}
+
+.striped-table .even {
+  background-color: #eee;
+}
+
+@media (max-width: 768px) {
+  .striped-table {
+    border: 0;
+  }
+
+  .striped-table th,
+  .striped-table td {
+    border: 0;
+  }
+
+  .striped-table th:before {
+    content: "";
+    display: block;
+    height: 20px;
+  }
+
+  .striped-table th:first-child {
+    display: none;
+  }
+
+  .striped-table td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .striped-table td:before {
+    content: attr(data-th);
+    display: block;
+    font-weight: bold;
+    padding-bottom: 8px;
+  }
+}
+    </style>
+</head>
+<body>
+  <h1>Borru Lakshmi Srinivas</h1>
+  <h1>RegNo: 21BCE7360</h1>
+  <h1>Campus: VIT-AP</h1>
+    <table class="striped-table" border= 2px>
+        <thead>
+          <tr>
+            <th>Task Number</th>
+            <th>Repository Link</th>
+            <th>Deployment Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="odd">
+            <td>React Task 1</td>
+            <td><a href="https://github.com/srinivasBorru/react1">Link</a></td>
+            <td><a href="https://react1-utv7.vercel.app/">Link</a></td>
+          </tr>
+          <tr class="even">
+            <td>React Task 2</td>
+            <td><a href="https://github.com/srinivasBorru/react2">Link</a></td>
+            <td><a href="https://react2-snowy-eta.vercel.app/">Link</a></td>
+          </tr>
+          <tr class="odd">
+            <td>React Task 3</td>
+            <td><a href="https://github.com/srinivasBorru/react3">Link</a></td>
+            <td><a href="https://react3-rosy.vercel.app/">Link</a></td>
+          </tr>
+          <tr class="odd">
+            <td>React Task 4</td>
+            <td><a href="https://github.com/srinivasBorru/react4">Link</a></td>
+            <td><a href="https://react4-pi.vercel.app/">Link</a></td>
+          </tr>
+          <tr class="odd">
+            <td>React Task 5</td>
+            <td><a href="https://github.com/srinivasBorru/react5">Link</a></td>
+            <td><a href="https://react5-blush.vercel.app/">Link</a></td>  
+          </tr>
+          <tr class="odd">
+            <td>React Task 6</td>
+            <td><a href="https://github.com/srinivasBorru/react6">Link</a></td>
+            <td><a href="https://react6-bice.vercel.app/">Link</a></td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
